@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CraigsPics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An image browser for Craigslist forums">
+    <meta name="author" content="Phil Puleo">
+
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/craigspics.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">CraigsPics</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="about.html">About</a></li> 
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <!-- container -->
+    <div class="container-fluid">
+      
+      <div class="row-fluid">
+        <div class="dropdown" style="position:relative">
+          <a id="forums" class="btn btn-small btn-inverse dropdown-toggle" data-toggle="dropdown" href="#">Choose a Forum <span class="caret"></span></a>
+          <ul id="forum" class="dropdown-menu" role="menu" aria-labelledby="forums">
+            <li role="menuitem"><a tabindex="-1" href="#" rel="121">[alt] energy</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="2232">adoption</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1900">antiques</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="3232">apple / mac</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="49">Arts Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1564">astronomy</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="78">atheism</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="5">Automotive</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="88">Beauty / Fashion</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="95">Bicycling</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="6151">bisexuality</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="4664">Boomers</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="47">celebrity gossip</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="128">cl - categories</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1">cl - cities/sites</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="8">CL - feedback</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="3">cl - flag help</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="9">CL - help desk</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1872">classical music</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="34">Computer Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="83">crafts forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="123">dance</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="130">death &amp; dying</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1215">design &amp; decor</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="122">dieting</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="31">disabilities</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="150">disaster relief</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="76">divorce</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="4508">eating disorder</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="99">ecology</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="90">education</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="126">elder care</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="74">electronics</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1789">en français svp</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="79">etiquette</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="3604">Fair Housing</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="41">Film &amp; Theatre</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="92">Fitness</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="64">Fixit / Home Imp</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="22">Food Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="86">foro español</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="2007">frugal living</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="85">Gaming</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="54">Gardening</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="124">genealogy</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1204">gift ideas</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="575">haiku hotel</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="43">Health &amp; Healing</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="4300">health &amp; healing [alt]</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="81">history forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="6">Housing</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1001">housing [alt]</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1201">insomnia</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="7">Job Market</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1257">jokes</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="200269">kink &amp; bdsm</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1703">knitting &amp; sewing</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="5755">limericks</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1991">linux</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="27">Literary &amp; Writing</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="73">Lëgal Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="72">m4m forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1926">marriage &amp; LTR</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="133">media watch</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="53">Money</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1947">Motorcycles</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="24">Musical Beat</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="501">nonprofits forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="4">Open Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="16">Outdoors</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="50">over 50 club</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="84">P.O.C.  Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="39">Parenting</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="26">Pet &amp; Animal</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="71">Philosophy</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="5500">photography</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="48">Politics Local</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="23">politics mideast</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="51">politics usa</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="20">Politics World</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="7659">polyamory</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="2230">pregnancy</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="29">Psychology</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="129">public transit</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="19">Përsonal Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="46">Queer Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1885">radio</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="12">recovery</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="59">religion</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1411">relocation</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="28">Romantic Advice</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="96">Science &amp; Math</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="89">self-employment</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="91">shopping forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="93">spirituality</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="32">Sports</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="3300">STD info</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="2012">supernatural</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="1040">tax forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="98">Television</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="97">transgender</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="193">Translation Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="42">Travel Forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="2229">trying to conceive</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="2400">vegan forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="9021">vegetarian forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="69">w4w forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="15">wedding forum</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="94">women's issues</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="7000">word association</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="21">xyz Testing</a></li>
+            <li role="menuitem"><a tabindex="-1" href="#" rel="8620">yoga</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="pagination pagination-centered pagination-top">
+          <ul>
+            <li class="next disabled"><a href="#">&larr; Newer</a></li>
+            <li class="navnum active"><a rel="1" href="#">1</a></li>
+            <li class="navnum"><a rel="2" href="#">2</a></li>
+            <li class="navnum"><a rel="3" href="#">3</a></li>
+            <li class="navnum"><a rel="4" href="#">4</a></li>
+            <li class="navnum"><a rel="5" href="#">5</a></li>
+            <li class="navnum"><a rel="6" href="#">6</a></li>
+            <li class="navnum"><a rel="7" href="#">7</a></li>
+            <li class="navnum"><a rel="8" href="#">8</a></li>
+            <li class="navnum"><a rel="9" href="#">9</a></li>
+            <li class="navnum"><a rel="10" href="#">10</a></li>
+            <li class="previous"><a href="#">Older &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="row-fluid">
+        
+        <!-- Debugging -->
+        <div id="debug" class="span8 offset2">
+          
+        </div>
+        
+        <!-- messages -->
+        <div class="span4 offset4">
+          <p id="messages"></p>
+          <div class="progress progress-striped active">
+            <div class="bar" style="width: 0%;"></div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div id="results" class="row-fluid">
+        <!-- Posts Render Here -->
+        <div class="span8 offset2">
+          <h1>CraigsPics</h1>
+          <p class="lead">An <em class="danger">unauthorized</em> image browser for craigslist forums</p>
+          <p>Nothing better to do? OK, choose a forum from the list in the upper left. While you're browsing, click an image to visit the corresponding forum post in a new tab. You might want to get a little drunk first.</p>
+          <p>Also, expect pretty much everything here to be NSFW.</p>
+        </div>
+      </div>
+      
+      <div class="row-fluid">
+        <div class="pagination pagination-centered pagination-bottom">
+          <ul>
+            <li class="next disabled"><a href="#">&larr; Newer</a></li>
+            <li class="navnum active"><a rel="1" href="#">1</a></li>
+            <li class="navnum"><a rel="2" href="#">2</a></li>
+            <li class="navnum"><a rel="3" href="#">3</a></li>
+            <li class="navnum"><a rel="4" href="#">4</a></li>
+            <li class="navnum"><a rel="5" href="#">5</a></li>
+            <li class="navnum"><a rel="6" href="#">6</a></li>
+            <li class="navnum"><a rel="7" href="#">7</a></li>
+            <li class="navnum"><a rel="8" href="#">8</a></li>
+            <li class="navnum"><a rel="9" href="#">9</a></li>
+            <li class="navnum"><a rel="10" href="#">10</a></li>
+            <li class="previous"><a href="#">Older &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <!-- /container -->
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/craigspics.js"></script>
+
+  </body>
+</html>

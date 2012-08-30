@@ -1,0 +1,70 @@
+a:focus {
+  outline: none;
+}
+
+em.danger {
+  color: #993300;  
+}
+
+#messages {
+  text-align: center;
+}
+
+#forum {
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;  
+}
+
+.pagination {
+  display: none;
+}
+
+.progress {
+  display: none;
+}
+
+#results .row-fluid {
+  margin-top: 10px;
+}
+
+#debug {
+  display: none;
+}
+
+.thumbs {
+  overflow: hidden;  
+}
+
+.thumbs a {
+  border: 1px solid #AAAAAA;
+  display: block;
+  float: left;
+  line-height: 1;
+  height: 20px;
+  margin: 4px 3px 0 0;
+  overflow: hidden;
+  padding: 0;
+  width: 20px;  
+}
+
+.thumbs a img {
+  opacity: 0.5;
+}
+
+.thumbs a.active img {
+  opacity: 1;
+}
+
+.thumbs img {
+  width: 20px;
+}
+
+@media (max-width: 767px) {
+  #results .span3 {
+    margin-bottom: 10px;
+  }
+  li.navnum {
+    display: none;
+  }
+}
