@@ -35,7 +35,7 @@ function fetchPost() {
     if (file_exists($cache_file) && (filemtime($cache_file) > (time() - 86400 ))) { 
       // Get the file from the cache.
       $file = file_get_contents($cache_file);
-      echo $file;
+      echo $file."[from cache]";
     }
     else {
       // Grab it and save it for next time.
