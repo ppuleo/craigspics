@@ -27,7 +27,7 @@
 function fetchPost() {
 
   if (isset($_POST["qs"])) {
-    $query = htmlentities($_POST["qs"], ENT_QUOTES, "UTF-8"); // Be careful with posting variables. 
+    $query = filter_var($_POST["qs"], FILTER_SANITIZE_URL); // Be careful with posting variables. 
     $url = "https://forums.craigslist.org/".$query;
     $cache_file = "cache/".hash('md5', $url).".html"; // Create a unique name for the cache file.
   
